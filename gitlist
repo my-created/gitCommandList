@@ -1,0 +1,38 @@
+1. 在项目目录中右击鼠标，选择Git Bash Here
+
+2. git pull ：拉取当前分支到本地，并且合并。
+
+3. 如果在dev分支上执行4。
+
+4. git checkout -b [分支名]（如add_user）：创建分支，并切换到这个分支。
+
+5. 执行2，开始开发。（注意，不能在dev上开发，新建自己分支开发，命令4）
+
+6. 随时执行 7,8,9
+
+7. git status 查看当前版本库状态
+
+8. git add . ：在根目录下执行，添加所有不在版本库的文件到暂存区，如果想添加某一个，可以直接添加文件路径。
+
+9. git commit -m "msg" :提交所有暂存区文件到本地版本库。
+
+10. git push origin [当前分支名] :推送本地版本库到远程版本库
+
+11. 一天工作结束，必须有一次7,8,9操作。
+
+12. 一个功能完成后，或者说功能上线，执行10，并到gitlab页面，选择你当前的分支，点击页面右侧的创建合并请求，Assignee 选择潘炳，Target branch 选择 dev，然后点击submit。
+13. git merge --no-ff dev 保留commit历史合并dev到当前分支
+
+14. git push origin --delete <branchName> 删除远程分支
+
+15. git fetch -p 删除没有远程分支的本地分支
+
+16. git tag -a v1.4 -m 'my version 1.4' 含标注的标签
+
+17. git tag v1.5 轻量级标签
+
+18. git tag -a v1.2 9fceb02 给某个commit打tag
+
+19. git log --pretty=oneline 单行显示log
+
+20. git diff --name-status mobile master 对比文件更改状况，只显示文件列表
