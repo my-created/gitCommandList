@@ -35,4 +35,4 @@
 
 19. git log --pretty=oneline 单行显示log
 
-20. git diff --name-status mobile master 对比文件更改状况，只显示文件列表
+20. git diff --name-status  master mobile 对比dev 相对于 master的文件更改状况，显示文件列表
