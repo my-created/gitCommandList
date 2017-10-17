@@ -39,4 +39,4 @@
 
 21. git diff --name-only master dev | xargs tar -czvf update.tar.gz 对比dev 到master的改变，并打包压缩。
 
-22. xargs -e up.log  tar -czvf  updata.tar.gz 也可分开执行，导出改变的文件列表，剔除不需要打包的，然后通过xargs -e file 导入并打包。
+22. xargs -a up.log  tar -czvf  updata.tar.gz 也可分开执行，导出改变的文件列表，剔除不需要打包的，然后通过xargs -e file 导入并打包。
