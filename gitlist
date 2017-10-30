@@ -21,6 +21,7 @@
 11. 一天工作结束，必须有一次7,8,9操作。
 
 12. 一个功能完成后，或者说功能上线，执行10，并到gitlab页面，选择你当前的分支，点击页面右侧的创建合并请求，Assignee 选择潘炳，Target branch 选择 dev，然后点击submit。
+
 13. git merge --no-ff dev 保留commit历史合并dev到当前分支
 
 14. git push origin --delete <branchName> 删除远程分支
@@ -66,3 +67,15 @@
 34. git stash show -p 或者 -patch 查看贮藏和当前分支的 diff 情况。显示diff的文件内容。
 
 35. git stash branch testchanges 根据贮藏开始的commit创建新分支。当现存分支不能正常导出贮藏的时候，使用它。
+
+rebase vs. merge // 还未彻底搞清楚
+36. git pull --rebase || git rebase 效果：合并远程分支到本地分支，分支记录保持一条直线。
+
+37. git pull 效果：合并远程分支到本地分支，分支记录
+
+merge vs. merge --no-ff
+38. git merge 是不保留commit并新建merge commit
+
+39. git merge --no-ff 保留commit并新建merge commit
+
+40. git merge --abort 回到merge之前的状态，这个命令不总是成功。
