@@ -20,7 +20,7 @@
 
 11. 一天工作结束，必须有一次7,8,9操作。
 
-12. 一个功能完成后，或者说功能上线，执行10，并到gitlab页面，选择你当前的分支，点击页面右侧的创建合并请求，Assignee 选择潘炳，Target branch 选择 dev，然后点击submit。
+12. 一个功能完成后，或者说功能上线，执行10，并到gitlab页面，选择你当前的分支，点击页面右侧的创建合并请求，Assignee 选择你的领导，Target branch 选择 dev，然后点击submit。
 
 13. git merge --no-ff dev 保留commit历史合并dev到当前分支
 
@@ -79,3 +79,14 @@ merge vs. merge --no-ff
 39. git merge --no-ff 保留commit并新建merge commit
 
 40. git merge --abort 回到merge之前的状态，这个命令不总是成功。
+
+版本回退
+41. git reset --hard 版本号 ，下面俩个是这个的应用
+
+绿字变红字(撤销add)
+git reset HEAD
+
+红字变无 (撤销没add修改)
+git checkout -- 文件
+
+当前分支有修改，但是不能在当前分支提交，直接切换到对应分支提交就行。
