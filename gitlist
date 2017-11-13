@@ -90,3 +90,5 @@ git reset HEAD
 git checkout -- 文件
 
 当前分支有修改，但是不能在当前分支提交，直接切换到对应分支提交就行。
+
+git config --global log.date iso 设置git log 时间显示格式为ISO标准时间格式。
