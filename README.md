@@ -2,7 +2,7 @@
 
 ## 创建 git 项目必备设置
 
-1. `git config core.ignorecase false` 设置版本库区分大小写
+1. `git config --global core.ignorecase false` 设置版本库区分大小写
 
 2. `git config --global log.date iso` 设置 `git log` 时间显示格式为ISO标准时间格式。
 
