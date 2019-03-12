@@ -1,5 +1,11 @@
 # git 命令列表
 
+## 创建 git 项目必备设置
+
+1. `git config core.ignorecase false` 设置版本库区分大小写
+
+2. `git config --global log.date iso` 设置 `git log` 时间显示格式为ISO标准时间格式。
+
 ## 日常操作
 
 1. `git pull` 拉取当前分支到本地，并且合并
@@ -85,8 +91,6 @@
 40. `git checkout -- 文件` 红字变无 (撤销没add修改)
 
 41. `git checkout [分支]` 切换分支，修改未 `add` 使用 `checkout` 切换分支后，修改会变到对应分支
-
-42. `git config --global log.date iso` 设置 `git log` 时间显示格式为ISO标准时间格式。
 
 43. `git diff branch1 branch2 --stat` 显示出所有有差异的文件列表
 
