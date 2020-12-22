@@ -99,3 +99,5 @@
 45. `git diff branch1 branch2` 显示出所有有差异的文件的详细差异
 
 46. `git reflog` 显示所有操作的 `log`（commit，checkout，等等其他的还没验证）
+
+47. `git checkout --track origin/<name>`  切换到远程未跟踪分支
