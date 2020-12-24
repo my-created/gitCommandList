@@ -101,3 +101,12 @@
 46. `git reflog` 显示所有操作的 `log`（commit，checkout，等等其他的还没验证）
 
 47. `git checkout --track origin/<name>`  切换到远程未跟踪分支
+
+48. `git fetch --all <origin>` 拉取所有分支
+
+49. `git pull --all <origin>`  拉去并合并所有分支
+
+50. `git push REMOTE '*:*'`  推送所有分支
+
+51. `git push REMOTE --all`  推送所有分支
+
