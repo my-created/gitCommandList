@@ -5,3 +5,11 @@
 2. git checkout 无法切换分支，
    原因： git config core.ignorecase true 忽略大小写，造成无法识别分支名称
    解决：  git config core.ignorecase false 区分大小写，即可正常切换
+
+3. git checkout -- . 无法撤销更改
+   原因：产生冲突的无法直接撤销
+   解决：  
+   ```bash
+   git reset filename # 重置文件
+   git checkout # 撤销修改
+   ```
